@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BTech Daily Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+
+<h1>BTech Daily Task Manager</h1>
+
+<form>
+
+
+<br>
+<br>
+<p2>
+A Task Manager is a simple web application that helps users organize, plan, and track their daily activities in an efficient way. It is especially useful for B.Tech students to manage their syllabus, assignments, lab work, and project tasks. By using a task manager, students can clearly list what they need to study each day and follow a structured schedule. This helps improve time management, productivity, and timely completion of academic goals. Below here type the Subject, Task and it's deadline.
+</p2>
+<br>
+<h2>Let’s level up</h2>
+<div class="box">
+    <p1>
+Subject :
+<input type="text" id = "taskSubject" name="subject" placeholder="Eg: c programming">
+</p1>
+<p>
+Task :
+<input type="text" id="taskInput" name="task" placeholder="Enter your syllabus task">
+</p>
+
+<p>
+Date :
+<input type="date" name="date" id="taskDate">
+</p>
+
+<p>
+Time :
+<input type="time" name="time" id="taskTime">
+</p>
+
+<p>
+<button type="button" onclick="addTask()">Add Task</button>
+</p>
+
+</form>
+</div>
+<ul id="taskList"></ul>
+<h2>Progress by Subject</h2>
+<div id="chartsContainer"></div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
